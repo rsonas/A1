@@ -1,0 +1,43 @@
+<!--- 
+    index.ejs
+    Aislinn Richardson 
+    301146892
+    09/14/23
+-->
+
+<!DOCTYPE html>
+
+<html>  
+    <head>    
+        <title><%= title %></title>  
+        <link rel="stylesheet" href="/content/index.css">
+
+    </head>  
+    <body>   
+        
+        <!-- Main navigation bar-->
+        <%- include ('partials/navbar.ejs') %>
+        <%- include ('partials/header.ejs') %>
+    
+        <h1 style = "text-align:center">Welcome to <%= title %></h1>
+        <p style = "text-align:center; font-weight: heavy"><%- h1%></p>
+
+        <!-- Services offered and images -->
+        <p style = "text-align:center"><%- p1%></p>
+        <% if (im1) { %>
+            <p><%- im1 %></p>
+        <% } %>
+        <p style = "text-align:center"><%- p2 %></p>
+        <% if (im2) { %>
+            <p><%- im2 %></p>
+        <% } %>
+        <p style = "text-align:center"><%- p3 %></p>
+        <% if (im2) { %>
+            <p><%- im3 %></p>
+        <% } %>
+
+        <!-- Footer-->
+        <%- include ('partials/footer.ejs') %>
+
+    </body>
+</html>
